@@ -1,1 +1,4 @@
-BG_COLOR = '#00e6ad'
+FG_WHITE = '#FFFFFF'
+
+BG_AM_COLOR = '#00e6ad'
+BG_GREY_COLOR = '#666666'
