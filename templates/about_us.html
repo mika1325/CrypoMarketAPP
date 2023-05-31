@@ -1,10 +1,24 @@
 {% extends 'base.html' %}
 
-{% block body  %}
-    <h1>O nama from Templates<h1>
-    <p>Ovo je stranica koja opisuje cemu sluzi ova Web aplikacija</p>
-    <p>Koristimo base.html</p>
-{% endblock body  %}
-
+{% block body %}
+    <h1>O nama PAGE from Templates</h1>
+    <p>Ovo je stranica koja opisuje cemu sluzi ova Web aplikacija.</p>
+    <p>Koristimo base.html.</p>
+    <p>ID: {{ user_in_template.id }}</p>
+    <p>Name: {{ user_in_template.name }}</p>
+    <p>Username: {{ user_in_template.username }}</p>
+    <p>Email: {{ user_in_template.email }}</p>
+    <p>Phone: {{ user_in_template.phone }}</p>
+    <p>Website: {{ user_in_template.website }}</p>
+    <p>Address: {{ user_in_template.address.street }}</p>
+    <p>{{ user_in_template.address.suite }}</p>
+    <p>{{ user_in_template.address.zipcode }}</p>
+    <p>{{ user_in_template.address.city }}</p>
+    <p>{{ user_in_template.address.geo.lat }}</p>
+    <p>{{ user_in_template.address.geo.lng }}</p>
+    <p>Company: {{ user_in_template.company.name }}</p>
+    <p>{{ user_in_template.company.catchPhrase }}</p>
+    <p>{{ user_in_template.company.bs }}</p>
+{% endblock body %}
 
 
